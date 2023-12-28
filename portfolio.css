@@ -7,21 +7,29 @@
 body {
   color: rgb(rgb(11, 11, 11), green, blue);
 }
-
+main {
+  background-color: rgb(0, 0, 0);
+  color: rgb(255, 255, 255);
+}
 .header {
   position: fixed;
   top: 0;
   left: 0;
+  right: 0;
   width: 100%;
   padding: 20px 20px;
   padding-right: 10px;
   display: flex;
   justify-content: space-between;
   align-items: center;
+  transition: top 200ms ease-in-out;
   z-index: 100;
   color: rgb(255, 255, 255);
   font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
-  background-color: rgba(0, 0, 0, 0.15);
+  background-color: rgba(119, 116, 116, 0.15);
+}
+.header--up {
+  top: -5rem;
 }
 
 .mylogo {
@@ -40,9 +48,14 @@ body {
   text-decoration: none;
   font-weight: 700;
   margin-left: 30px;
+  display: inline-flex;
 }
+.contacts {
+  padding-right: 20px;
+}
+
 .navbar a:hover {
-  color: blue;
+  color: rgb(76, 76, 81);
 }
 .home {
   position: relative;
@@ -53,7 +66,7 @@ body {
   background-position: center;
   display: flex;
   align-items: center;
-  background-color: rgb(0, 0, 50);
+  background-color: rgb(0, 0, 0);
   padding: 70px 10%;
 }
 
@@ -72,7 +85,7 @@ body {
   color: white;
 }
 span {
-  color: blue;
+  color: rgb(188, 212, 7);
 }
 .content p {
   display: inline;
@@ -101,6 +114,9 @@ span {
   width: 100%;
   height: 100%;
   object-fit: cover;
+}
+.hardskills {
+  display: inline;
 }
 html {
   scroll-behavior: smooth;
