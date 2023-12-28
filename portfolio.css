@@ -5,18 +5,15 @@
   font-family: Arial, Helvetica, sans-serif;
 }
 body {
-  color: rgb(rgb(11, 11, 11), green, blue);
-}
-main {
-  background-color: rgb(0, 0, 0);
+  background-color: rgb(13, 13, 13);
   color: rgb(255, 255, 255);
 }
+
 .header {
   position: fixed;
   top: 0;
-  left: 0;
-  right: 0;
   width: 100%;
+  height: 55px;
   padding: 20px 20px;
   padding-right: 10px;
   display: flex;
@@ -26,10 +23,10 @@ main {
   z-index: 100;
   color: rgb(255, 255, 255);
   font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
-  background-color: rgba(119, 116, 116, 0.15);
+  background-color: black;
 }
 .header--up {
-  top: -5rem;
+  top: -4.5rem;
 }
 
 .mylogo {
@@ -55,7 +52,7 @@ main {
 }
 
 .navbar a:hover {
-  color: rgb(76, 76, 81);
+  color: rgb(125, 194, 29);
 }
 .home {
   position: relative;
@@ -120,4 +117,123 @@ span {
 }
 html {
   scroll-behavior: smooth;
+}
+.about-me {
+  font-size: 28px;
+  padding: 20px 250px 20px 250px;
+}
+.div-about-me {
+  display: block;
+}
+
+.header-aboutme {
+  font-size: 60px;
+  padding-bottom: 10px;
+  padding-top: 40px;
+  display: flex;
+  justify-content: center;
+}
+.span-aboutme {
+  font-size: 24px;
+  padding-left: 415px;
+  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+  padding-bottom: 2200px;
+}
+.p-aboutme {
+  font-size: 40px;
+  color: rgb(152, 199, 12);
+}
+.hardskills {
+  padding-top: 70px;
+  display: flex;
+  justify-content: center;
+}
+.copyright {
+  background-color: rgb(24, 24, 24);
+  display: flex;
+  justify-content: end;
+  font-size: 10px;
+}
+
+.input-name {
+  background-color: rgb(118, 118, 118);
+  font-size: 25px;
+  border-radius: 4%;
+  cursor: pointer;
+  border: 2x solid black;
+}
+::placeholder {
+  color: #000000;
+}
+.input-email {
+  background-color: rgb(128, 125, 125);
+  font-size: 25px;
+  border-radius: 4%;
+  cursor: pointer;
+  margin-left: 10px;
+  border: 2px solid rgb(0, 0, 0);
+}
+.input-subject {
+  background-color: rgb(128, 125, 125);
+  font-size: 20px;
+  border-radius: 4%;
+  cursor: pointer;
+  width: 315px;
+  height: 35px;
+  border: 2px solid rgb(0, 0, 0);
+  width: 635px;
+  height: 38px;
+  font-size: 28px;
+}
+.button-send-message {
+  background-color: #c5ff05;
+  border-radius: 50px;
+  border-width: 0;
+  box-shadow: rgba(25, 25, 25, 0.04) 0 0 1px 0, rgba(0, 0, 0, 0.1) 0 3px 4px 0;
+  color: #000000;
+  cursor: pointer;
+  font-family: Arial, sans-serif;
+  font-size: 1em;
+  height: 50px;
+  padding: 0 25px;
+  transition: all 200ms;
+  margin-left: 50px;
+  margin-top: 40px;
+}
+.button-send-message:hover {
+  background-color: #506108;
+  transform: scale(1.05);
+}
+
+.textarea {
+  background-color: rgb(128, 125, 125);
+  margin-top: 15px;
+  cursor: pointer;
+  width: 635px;
+  font-size: 28px;
+  border: 2px solid rgb(0, 0, 0);
+  border-radius: 2%;
+}
+.upper-contact {
+  padding-left: 50px;
+  display: flex;
+}
+
+.footer-contact {
+  padding-left: 50px;
+  padding-top: 40px;
+  display: grid;
+
+  margin-top: -20px;
+}
+
+.messageme {
+  padding-left: 60px;
+  font-size: 30px;
+}
+.contact-panelinfo {
+  display: contents;
+}
+.portfolio-section {
+  background-color: #000000;
 }

@@ -1,71 +1,118 @@
 <!DOCTYPE html>
-<html lang="pl">
+<html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>My portfolio</title>
+    <title>Miłosz Smaka</title>
     <link type="text/css" href="portfolio.css" rel="stylesheet" />
-    <link rel=\"shortcut icon\" type=\”image/jpeg\”" href="Untitled.jpg">
+    <link rel="icon" href="alphabet-2484505_640.png" />
   </head>
   <body>
     <header class="header">
       <a class="mylogo" href="My portfolio.html">My<span>Portfolio </span> </a>
       <nav class="navbar">
-        <a href="#">ABOUT ME</a>
+        <a href="#about">ABOUT ME</a>
         <a href="#">PROJECTS</a>
         <a class="contacts" href="#">CONTACT</a>
       </nav>
     </header>
     <section class="home" id="home">
       <div class="content">
-        <h3>Hi, Everyone!</h3>
+        <h2>Hi, Everyone!</h2>
         <h1>I'm <span>Miłosz Smaka</span></h1>
         <h3>Frontend Developer</h3>
         <br />
-        <p>
-          Newbie Fronend Developer with no experience.<br />
-          Practiting to create a website and improve my frontend skills.
-        </p>
+        <p>Discover programming world with me</p>
       </div>
       <div class="image-conteiner">
         <img src="Untitled.jpg" alt="zdjecie" title="zdj" />
       </div>
     </section>
     <main>
-      <div>
-        <article>About me</article>
-        <section>
-          Hi!<br />
-          I'm Miłosz Smaka. Lorem ipsum dolor sit amet consectetur adipisicing
-          elit. Ut fugit hic quaerat, aut recusandae harum earum vel optio illum
-          laborum placeat a porro, exercitationem minus dolore perferendis unde
-          maiores rem asperiores cumque minima ducimus accusamus suscipit id.
-          Exercitationem, quis voluptatem?
-        </section>
-        <section>
-          Hi!<br />
-          I'm Miłosz Smaka. Lorem ipsum dolor sit amet consectetur adipisicing
-          elit. Ut fugit hic quaerat, aut recusandae harum earum vel optio illum
-          laborum placeat a porro, exercitationem minus dolore perferendis unde
-          maiores rem asperiores cumque minima ducimus accusamus suscipit id.
-          Exercitationem, quis voluptatem?
-        </section>
-        <section>
-          Hi!<br />
-          I'm Miłosz Smaka. Lorem ipsum dolor sit amet consectetur adipisicing
-          elit. Ut fugit hic quaerat, aut recusandae harum earum vel optio illum
-          laborum placeat a porro, exercitationem minus dolore perferendis unde
-          maiores rem asperiores cumque minima ducimus accusamus suscipit id.
-          Exercitationem, quis voluptatem?
+      <div class="div-about-me">
+        <h2 class="header-aboutme">About me</h2>
+        <section class="about-me">
+          <p class="p-aboutme">I'm Miłosz. Frontend Developer</p>
+          Since January 2023, I have been intensively developing my programming
+          skills, focusing on frontend technologies such as HTML, CSS,
+          JavaScript, and React. I constantly deepen my knowledge through daily
+          coding and courses.
         </section>
       </div>
-      <article>Hard Skills</article>
-      <div class="hardskills">HTML</div>
-      <div class="hardskills">CSS</div>
-      <div class="hardskills">Bootstrap</div>
-      <div class="hardskills">JavaScript</div>
-      <div class="hardskills">React</div>
+      <h2 class="header-aboutme">Hard Skills</h2>
+      <div class="hardskills">
+        <img src="logo-2582748_640.png" width="150px" height="150px" />
+
+        <img
+          src="logo-2582747_640.png"
+          width="150px"
+          height="150px"
+          style="margin-left: 50px"
+        />
+
+        <img
+          src="javascript-736400_640.png"
+          width="150px"
+          height="150px"
+          style="margin-left: 50px"
+        />
+
+        <img
+          src="kisspng-react-javascript-responsive-web-design-github-angu-github-5accac250cda95.4452823815233628530527.png"
+          width="150px"
+          height="150px"
+          style="margin-left: 60px"
+        />
+      </div>
     </main>
+    <h2 class="header-aboutme">Portfolio</h2>
+    <div class="portfolio-section">
+      <br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br />
+    </div>
+    <h2 class="header-aboutme">Contact</h2>
+    <h3 class="messageme">Message Me</h3>
+    <div class="contact-panelinfo">
+      <div class="upper-contact">
+        <input
+          type="text"
+          class="input-name"
+          name="name"
+          placeholder="Name"
+          required
+        />
+        <input
+          type="email"
+          class="input-email"
+          name="email"
+          placeholder="Email"
+          required
+        />
+      </div>
+      <div class="footer-contact">
+        <input
+          type="text"
+          class="input-subject"
+          name="subject"
+          placeholder="Subject"
+          required
+        />
+        <textarea
+          name="message"
+          class="textarea"
+          placeholder="Message me"
+          cols="40"
+          rows="6"
+          required
+        ></textarea>
+      </div>
+    </div>
+    <aside></aside>
+
+    <button type="submit" class="button-send-message" name="send">
+      Send Message
+    </button>
+
+    <p class="copyright">CopyRight © 2023 Miłosz Smaka | All Rights Reserved</p>
   </body>
   <script src="portfolio.js"></script>
 </html>
