@@ -1,8 +1,11 @@
+@import url("https://fonts.googleapis.com/css2?family=Long+Cang&family=Montserrat:wght@400;700&family=Sevillana&display=swap");
+
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: "Long Cang", cursive;
+  font-family: "Montserrat", sans-serif;
 }
 body {
   background-color: rgb(13, 13, 13);
@@ -52,7 +55,7 @@ body {
 }
 
 .navbar a:hover {
-  color: rgb(125, 194, 29);
+  color: rgb(188, 212, 7);
 }
 .home {
   position: relative;
@@ -141,7 +144,7 @@ html {
 }
 .p-aboutme {
   font-size: 40px;
-  color: rgb(152, 199, 12);
+  color: rgb(188, 212, 7);
 }
 .hardskills {
   padding-top: 70px;
@@ -151,39 +154,39 @@ html {
 .copyright {
   background-color: rgb(24, 24, 24);
   display: flex;
-  justify-content: end;
-  font-size: 10px;
+  justify-content: start;
+  font-size: 12px;
 }
 
 .input-name {
   background-color: rgb(118, 118, 118);
-  font-size: 25px;
-  border-radius: 4%;
+  font-size: 20px;
   cursor: pointer;
-  border: 2x solid black;
+  border: 2px solid black;
+  height: 45px;
+  width: 300px;
 }
 ::placeholder {
   color: #000000;
 }
 .input-email {
   background-color: rgb(128, 125, 125);
-  font-size: 25px;
-  border-radius: 4%;
   cursor: pointer;
   margin-left: 10px;
   border: 2px solid rgb(0, 0, 0);
+  width: 320px;
+  font-size: 20px;
 }
 .input-subject {
   background-color: rgb(128, 125, 125);
   font-size: 20px;
-  border-radius: 4%;
   cursor: pointer;
   width: 315px;
   height: 35px;
   border: 2px solid rgb(0, 0, 0);
   width: 635px;
   height: 38px;
-  font-size: 28px;
+  font-size: 20px;
 }
 .button-send-message {
   background-color: #c5ff05;
@@ -199,6 +202,7 @@ html {
   transition: all 200ms;
   margin-left: 50px;
   margin-top: 40px;
+  margin-bottom: 100px;
 }
 .button-send-message:hover {
   background-color: #506108;
@@ -210,9 +214,8 @@ html {
   margin-top: 15px;
   cursor: pointer;
   width: 635px;
-  font-size: 28px;
+  font-size: 20px;
   border: 2px solid rgb(0, 0, 0);
-  border-radius: 2%;
 }
 .upper-contact {
   padding-left: 50px;
@@ -223,7 +226,6 @@ html {
   padding-left: 50px;
   padding-top: 40px;
   display: grid;
-
   margin-top: -20px;
 }
 
@@ -236,4 +238,51 @@ html {
 }
 .portfolio-section {
   background-color: #000000;
+}
+
+.asidepanel {
+  float: right;
+  margin-right: 150px;
+}
+
+.contactinfo {
+  font-size: 45px;
+  text-align: center;
+  margin-top: -250px;
+}
+.paragrafcontactinfo {
+  font-size: smaller;
+}
+
+.span-contact-info {
+  padding-top: 20px;
+  font-size: 20px;
+  padding-left: 10px;
+}
+
+.spanname {
+  font-size: 24px;
+}
+
+#mail {
+  text-decoration: none;
+  color: rgb(188, 212, 7);
+}
+#mail:hover {
+  background-color: #c5ff05;
+  border-radius: 50px;
+  border-width: 0;
+  box-shadow: rgba(25, 25, 25, 0.04) 0 0 1px 0, rgba(0, 0, 0, 0.1) 0 3px 4px 0;
+  color: #000000;
+  cursor: pointer;
+  font-family: Arial, sans-serif;
+  font-size: 1em;
+  height: 50px;
+  padding: 0 25px;
+  transition: all 200ms;
+}
+
+img:hover {
+  transform: scale(1.1);
+  transition: all 0.5s;
 }

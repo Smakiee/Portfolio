@@ -6,14 +6,19 @@
     <title>Miłosz Smaka</title>
     <link type="text/css" href="portfolio.css" rel="stylesheet" />
     <link rel="icon" href="alphabet-2484505_640.png" />
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Long+Cang&family=Montserrat:wght@400;700&family=Sevillana&display=swap");
+    </style>
   </head>
   <body>
     <header class="header">
-      <a class="mylogo" href="My portfolio.html">My<span>Portfolio </span> </a>
+      <a class="mylogo" href="My portfolio.html#home"
+        >My<span>Portfolio </span>
+      </a>
       <nav class="navbar">
-        <a href="#about">ABOUT ME</a>
-        <a href="#">PROJECTS</a>
-        <a class="contacts" href="#">CONTACT</a>
+        <a href="My portfolio.html#about-me">ABOUT ME</a>
+        <a href="My portfolio.html#Portfolio">PROJECTS</a>
+        <a class="contacts" href="My portfolio.html#contact">CONTACT</a>
       </nav>
     </header>
     <section class="home" id="home">
@@ -30,13 +35,15 @@
     </section>
     <main>
       <div class="div-about-me">
-        <h2 class="header-aboutme">About me</h2>
+        <h2 class="header-aboutme"><a id="about-me">About me</a></h2>
         <section class="about-me">
-          <p class="p-aboutme">I'm Miłosz. Frontend Developer</p>
-          Since January 2023, I have been intensively developing my programming
-          skills, focusing on frontend technologies such as HTML, CSS,
-          JavaScript, and React. I constantly deepen my knowledge through daily
-          coding and courses.
+          <p class="p-aboutme">I'm Front-end ...</p>
+          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quos, magnam
+          odio doloribus amet nam laborum? Laboriosam minus, voluptatum
+          cupiditate tempore a sint quam reprehenderit repellendus. Incidunt,
+          laborum tempore, sit repudiandae doloribus hic provident nobis iure
+          animi explicabo debitis, quod ratione. Earum, debitis esse minus
+          voluptas impedit iusto voluptate laudantium aliquid.
         </section>
       </div>
       <h2 class="header-aboutme">Hard Skills</h2>
@@ -65,11 +72,12 @@
         />
       </div>
     </main>
-    <h2 class="header-aboutme">Portfolio</h2>
+
+    <h2 class="header-aboutme"><a id="Portfolio">Portfolio</a></h2>
     <div class="portfolio-section">
       <br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br />
     </div>
-    <h2 class="header-aboutme">Contact</h2>
+    <h2 class="header-aboutme"><a id="contact">Contact</a></h2>
     <h3 class="messageme">Message Me</h3>
     <div class="contact-panelinfo">
       <div class="upper-contact">
@@ -77,8 +85,9 @@
           type="text"
           class="input-name"
           name="name"
-          placeholder="Name"
           required
+          onclick="Name"
+          placeholder="Name"
         />
         <input
           type="email"
@@ -104,15 +113,27 @@
           rows="6"
           required
         ></textarea>
+        <aside>
+          <div class="asidepanel">
+            <h3 class="contactinfo">Contact Info</h3>
+            <p class="paragrafcontactinfo">
+              Always available for freelance work. Feel free to contact me!
+            </p>
+            <p class="span-contact-info">
+              <span class="spanname">Name</span><br />
+              Miłosz<br />
+              <span class="spanname"
+                ><a id="mail" href="mailto:m.smaka@wp.pl"> Email Me</a></span
+              ><br />
+              m.smaka@wp.pl
+            </p>
+          </div>
+        </aside>
       </div>
     </div>
-    <aside></aside>
-
     <button type="submit" class="button-send-message" name="send">
       Send Message
     </button>
-
     <p class="copyright">CopyRight © 2023 Miłosz Smaka | All Rights Reserved</p>
   </body>
-  <script src="portfolio.js"></script>
 </html>
