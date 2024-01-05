@@ -1,4 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Long+Cang&family=Montserrat:wght@400;700&family=Sevillana&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Bungee+Spice&family=Long+Cang&family=Montserrat:wght@400;700&family=Sevillana&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Rubik+Scribble&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Long+Cang&display=swap");
 
 * {
   margin: 0;
@@ -319,4 +322,37 @@ html {
   margin: 10px;
   padding: 5px;
   background-color: rgb(63, 63, 63);
+}
+
+.blog-title-top {
+  margin-top: 4%;
+  text-align: center;
+  font-family: "Rubik Scribble", system-ui;
+  font-size: 85px;
+}
+.blog-title-p {
+  text-align: center;
+  font-family: "Rubik Scribble", system-ui;
+  font-size: 18px;
+}
+
+.first-photo {
+  float: left;
+  height: 400px;
+  margin: 0px 0px 20px 30px;
+}
+
+.first-opis {
+  border: 2px solid rgb(0, 0, 0);
+  font-size: 34px;
+  background-color: rgb(95, 93, 93);
+  height: 300px;
+  color: black;
+  margin: 30px;
+  margin-left: 340px;
+  font-family: "Long Cang", cursive;
+  padding-top: 30px;
+  text-align: center;
+  float: right;
+  position: fixed;
 }
