@@ -40,6 +40,10 @@ body {
   font-weight: 800;
   cursor: pointer;
 }
+.blog-navbar {
+  padding-right: 20px;
+  border-left: 4px solid rgb(188, 212, 7);
+}
 
 .navbar a {
   position: relative;
@@ -51,7 +55,7 @@ body {
   display: inline-flex;
 }
 .contacts {
-  padding-right: 20px;
+  padding-right: 8px;
 }
 
 .navbar a:hover {
@@ -102,7 +106,7 @@ span {
 
 .image-conteiner {
   position: absolute;
-  top: 25%;
+  top: 18%;
   right: 100px;
   width: 500px;
   height: 500px;
@@ -243,6 +247,7 @@ html {
 .asidepanel {
   float: right;
   margin-right: 150px;
+  border: 1.5px solid yellow;
 }
 
 .contactinfo {
@@ -282,7 +287,36 @@ html {
   transition: all 200ms;
 }
 
-img:hover {
-  transform: scale(1.1);
-  transition: all 0.5s;
+.img:hover {
+  transform: scale(1.2);
+  transition: all 0.4s;
+}
+.imgproject:hover {
+  transform: scale(1.03);
+  transition: all 0.1s;
+}
+.img {
+  border-radius: 30%;
+  margin-bottom: 100px;
+}
+.header-hardskills {
+  font-size: 38px;
+  text-align: center;
+  margin-top: 50px;
+  margin-bottom: -30px;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+}
+
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding-bottom: 200px;
+}
+
+.image-box {
+  margin: 10px;
+  padding: 5px;
+  background-color: rgb(63, 63, 63);
 }
