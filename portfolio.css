@@ -2,7 +2,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Bungee+Spice&family=Long+Cang&family=Montserrat:wght@400;700&family=Sevillana&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Rubik+Scribble&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Long+Cang&display=swap");
-
 * {
   margin: 0;
   padding: 0;
@@ -14,7 +13,6 @@ body {
   background-color: rgb(13, 13, 13);
   color: rgb(255, 255, 255);
 }
-
 .header {
   position: fixed;
   top: 0;
@@ -23,7 +21,7 @@ body {
   padding: 20px 20px;
   padding-right: 10px;
   display: flex;
-  justify-content: space-between;
+  justify-content: flex-end;
   align-items: center;
   transition: top 200ms ease-in-out;
   z-index: 100;
@@ -31,23 +29,10 @@ body {
   font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
   background-color: black;
 }
-.header--up {
-  top: -4.5rem;
-}
-
-.mylogo {
-  position: relative;
-  font-size: 25px;
-  color: rgb(255, 255, 255);
-  text-decoration: none;
-  font-weight: 800;
-  cursor: pointer;
-}
 .blog-navbar {
   padding-right: 20px;
   border-left: 4px solid rgb(188, 212, 7);
 }
-
 .navbar a {
   position: relative;
   font-size: 1.1em;
@@ -60,7 +45,6 @@ body {
 .contacts {
   padding-right: 8px;
 }
-
 .navbar a:hover {
   color: rgb(188, 212, 7);
 }
@@ -76,7 +60,6 @@ body {
   background-color: rgb(0, 0, 0);
   padding: 70px 10%;
 }
-
 .content {
   max-width: 600px;
 }
@@ -106,36 +89,30 @@ span {
   text-decoration: none;
   margin: 30px 15px 30px 0;
 }
-
 .image-conteiner {
-  position: absolute;
-  top: 18%;
-  right: 100px;
-  width: 500px;
-  height: 500px;
+  right: 10rem;
+  width: 31rem;
+  height: 32rem;
   border-radius: 50%;
   overflow: hidden;
 }
-
 .image-conteiner img {
   width: 100%;
   height: 100%;
   object-fit: cover;
 }
-.hardskills {
-  display: inline;
-}
 html {
   scroll-behavior: smooth;
 }
 .about-me {
-  font-size: 28px;
-  padding: 20px 250px 20px 250px;
+  font-size: 2rem;
+  padding-right: 20px;
+  padding-left: 20px;
+  width: 50%;
 }
 .div-about-me {
   display: block;
 }
-
 .header-aboutme {
   font-size: 60px;
   padding-bottom: 10px;
@@ -143,28 +120,10 @@ html {
   display: flex;
   justify-content: center;
 }
-.span-aboutme {
-  font-size: 24px;
-  padding-left: 415px;
-  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
-  padding-bottom: 2200px;
-}
 .p-aboutme {
   font-size: 40px;
   color: rgb(188, 212, 7);
 }
-.hardskills {
-  padding-top: 70px;
-  display: flex;
-  justify-content: center;
-}
-.copyright {
-  background-color: rgb(24, 24, 24);
-  display: flex;
-  justify-content: start;
-  font-size: 12px;
-}
-
 .input-name {
   background-color: rgb(118, 118, 118);
   font-size: 20px;
@@ -210,12 +169,13 @@ html {
   margin-left: 50px;
   margin-top: 40px;
   margin-bottom: 100px;
+  width: 12em;
+  height: 4em;
 }
 .button-send-message:hover {
   background-color: #506108;
   transform: scale(1.05);
 }
-
 .textarea {
   background-color: rgb(128, 125, 125);
   margin-top: 15px;
@@ -228,50 +188,20 @@ html {
   padding-left: 50px;
   display: flex;
 }
-
 .footer-contact {
   padding-left: 50px;
   padding-top: 40px;
   display: grid;
   margin-top: -20px;
 }
-
 .messageme {
-  padding-left: 60px;
-  font-size: 30px;
-}
-.contact-panelinfo {
-  display: contents;
+  padding-left: 2.5em;
+  padding-bottom: 0.5em;
+  font-size: 1.5em;
 }
 .portfolio-section {
   background-color: #000000;
 }
-
-.asidepanel {
-  float: right;
-  margin-right: 150px;
-  border: 1.5px solid yellow;
-}
-
-.contactinfo {
-  font-size: 45px;
-  text-align: center;
-  margin-top: -250px;
-}
-.paragrafcontactinfo {
-  font-size: smaller;
-}
-
-.span-contact-info {
-  padding-top: 20px;
-  font-size: 20px;
-  padding-left: 10px;
-}
-
-.spanname {
-  font-size: 24px;
-}
-
 #mail {
   text-decoration: none;
   color: rgb(188, 212, 7);
@@ -289,7 +219,6 @@ html {
   padding: 0 25px;
   transition: all 200ms;
 }
-
 .img:hover {
   transform: scale(1.2);
   transition: all 0.4s;
@@ -310,20 +239,17 @@ html {
   font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
     "Lucida Sans", Arial, sans-serif;
 }
-
 .container {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
   padding-bottom: 200px;
 }
-
 .image-box {
   margin: 10px;
   padding: 5px;
   background-color: rgb(63, 63, 63);
 }
-
 .blog-title-top {
   margin-top: 4%;
   text-align: center;
@@ -335,13 +261,11 @@ html {
   font-family: "Rubik Scribble", system-ui;
   font-size: 18px;
 }
-
 .first-photo {
   float: left;
   height: 400px;
   margin: 0px 0px 20px 30px;
 }
-
 .first-opis {
   border: 2px solid rgb(0, 0, 0);
   font-size: 34px;
@@ -355,4 +279,137 @@ html {
   text-align: center;
   float: right;
   position: fixed;
+}
+#skills-section {
+  color: white;
+}
+.skills-container {
+  display: flex;
+  flex-wrap: wrap;
+  width: 80%;
+  margin: auto;
+}
+.skill-information {
+  padding: 2rem;
+  text-align: center;
+}
+.skill-name {
+  margin: 0;
+  padding: 10px;
+  font-size: 1.6rem;
+}
+.skill-information progress {
+  background-color: white;
+  border: 1px solid white;
+}
+.skill-information progress::-webkit-progress-value {
+  border-radius: 0;
+  background-color: white;
+}
+.skill-information progress::-webkit-progress-bar {
+  background-color: black;
+}
+.heading {
+  font-size: 4rem;
+  text-align: center;
+  padding-top: 4rem;
+  padding-bottom: 8rem;
+}
+.copyright {
+  background-color: rgb(22, 22, 22);
+  display: flex;
+  justify-content: space-between;
+  font-size: 1em;
+  padding: 10px;
+}
+.icons {
+  padding: 15px;
+}
+.iconss {
+  color: white;
+}
+#facebook:hover {
+  transform: scale(1.5);
+  transition: all 0.3s;
+}
+#instagram:hover {
+  transform: scale(1.3);
+  transition: all 0.3s;
+}
+#github:hover {
+  transform: scale(1.5);
+  transition: all 0.3s;
+}
+#linkedin:hover {
+  transform: scale(1.5);
+  transition: all 0.3s;
+}
+.contact-form-input {
+  padding: 0.5em 0.5em;
+  margin-bottom: 2em;
+  font-size: 1.1rem;
+  border: none;
+  background-color: #161616;
+  color: #f0f0f0;
+  box-sizing: border-box;
+  margin-left: 8rem;
+  width: 20rem;
+  width: 50%;
+}
+.contact-textarea {
+  margin-left: 8rem;
+  padding: 0.5em 0.5em;
+  margin-bottom: 2em;
+  font-size: 1.1rem;
+  border: none;
+  background-color: #161616;
+  color: #f0f0f0;
+  box-sizing: border-box;
+  width: 50%;
+  min-height: 6rem;
+}
+#button {
+  background-color: #161616;
+  color: #f0f0f0;
+  width: 13em;
+  height: 8em;
+  border: 2px solid black;
+  border-radius: 10%;
+  margin-bottom: 7rem;
+}
+#button:hover {
+  transform: scale(1.1);
+  transition: all 0.5s;
+}
+.right-left {
+  display: flex;
+}
+::placeholder {
+  color: white;
+}
+.contact-info {
+  display: flex;
+  flex-direction: column;
+  margin-right: 10rem;
+}
+.contact-info-freelance {
+  color: bisque;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+}
+.name-contact-info {
+  font-size: 1.3rem;
+  text-decoration: none;
+  color: aliceblue;
+  padding-top: 1rem;
+}
+.contactinfo-side {
+  font-size: 2rem;
+}
+.email {
+  font-size: 1.1rem;
+}
+.name {
+  font-size: 1.2rem;
+  padding-bottom: 1rem;
 }

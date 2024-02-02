@@ -5,14 +5,18 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Miłosz Smaka</title>
     <link type="text/css" href="portfolio.css" rel="stylesheet" />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.6.1/css/all.css"
+      integrity="sha384-gfdkjb5BdAXd+lj+gudLWI+BXq4IuLW5IT+brZEZsLFm++aCMlF1V92rMkPaX4PP"
+      crossorigin="anonymous"
+    />
     <link rel="icon" href="alphabet-2484505_640.png" />
   </head>
   <body>
     <header class="header">
-      <a class="mylogo" href="My portfolio.html#home"
-        >My<span>Portfolio </span>
-      </a>
       <nav class="navbar">
+        <a href="My portfolio.html#home">HOME</a>
         <a href="My portfolio.html#about-me">ABOUT ME</a>
         <a href="My portfolio.html#Portfolio">PROJECTS</a>
         <a class="contacts" href="My portfolio.html#contact">CONTACT</a>
@@ -28,58 +32,64 @@
         <p>Discover programming world with me</p>
       </div>
       <div class="image-conteiner">
-        <img src="Untitled.jpg" alt="zdjecie" title="zdj" />
+        <img src="Untitled.jpg" alt="image" title="my image" />
       </div>
     </section>
     <main>
       <div class="div-about-me">
-        <h2 class="header-aboutme"><a id="about-me">About me</a></h2>
+        <h2 class="heading"><a id="about-me">About me</a></h2>
         <section class="about-me">
-          <p class="p-aboutme">I'm Front-end ...</p>
-          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quos, magnam
-          odio doloribus amet nam laborum? Laboriosam minus, voluptatum
-          cupiditate tempore a sint quam reprehenderit repellendus. Incidunt,
-          laborum tempore, sit repudiandae doloribus hic provident nobis iure
-          animi explicabo debitis, quod ratione. Earum, debitis esse minus
-          voluptas impedit iusto voluptate laudantium aliquid.
+          <span>I'm Fullstack Developer</span>
+          I started my coding journey almost exactly a year ago and now I'm
+          working full time and doing freelance projects on the side for my
+          friends. You may have noticed from my portfolio, but I'm obsessed with
+          unique, interesting design and user-friendly functionality so hit me
+          up with your weird artistic project ideas or app proposals.
         </section>
       </div>
-      <h2 class="header-hardskills">Hard Skills</h2>
-      <div class="hardskills">
-        <img
-          src="logo-2582748_640.png"
-          width="150px"
-          height="150px"
-          class="img"
-        />
-
-        <img
-          src="logo-2582747_640.png"
-          width="150px"
-          height="150px"
-          style="margin-left: 50px"
-          class="img"
-        />
-
-        <img
-          src="javascript-736400_640.png"
-          width="150px"
-          height="150px"
-          style="margin-left: 50px"
-          class="img"
-        />
-
-        <img
-          src="kisspng-react-javascript-responsive-web-design-github-angu-github-5accac250cda95.4452823815233628530527.png"
-          width="150px"
-          height="150px"
-          style="margin-left: 60px"
-          class="img"
-        />
-      </div>
+      <section id="skills-section">
+        <h2 class="heading">My skills</h2>
+        <div class="skills-container">
+          <div class="skill-information">
+            <p><i class="fab fa-html5 fa-3x"></i></p>
+            <p class="skill-name">HTML5</p>
+            <p><progress value="90" max="100"></progress></p>
+          </div>
+          <div class="skill-information">
+            <p><i class="fab fa-css3 fa-3x"></i></p>
+            <p class="skill-name">CSS3</p>
+            <p><progress value="85" max="100" /></p>
+          </div>
+          <div class="skill-information">
+            <p><i class="fab fa-sass fa-3x"></i></p>
+            <p class="skill-name">Sass</p>
+            <p><progress value="70" max="100"></progress></p>
+          </div>
+          <div class="skill-information">
+            <p><i class="fab fa-js fa-3x"></i></p>
+            <p class="skill-name">JavaScript</p>
+            <p><progress value="75" max="100"></progress></p>
+          </div>
+          <div class="skill-information">
+            <p><i class="fab fa-react fa-3x"></i></p>
+            <p class="skill-name">React</p>
+            <p><progress value="50" max="100"></progress></p>
+          </div>
+          <div class="skill-information">
+            <p><i class="fab fa-python fa-3x"></i></p>
+            <p class="skill-name">Python</p>
+            <p><progress value="70" max="100" /></p>
+          </div>
+          <div class="skill-information">
+            <p><i class="fab fa-angular fa-3x"></i></p>
+            <p class="skill-name">Angular(In Progress)</p>
+            <p><progress value="10" max="100"></progress></p>
+          </div>
+        </div>
+      </section>
     </main>
     <div class="portfolio-section">
-      <h2 class="header-aboutme"><a id="Portfolio">My projects</a></h2>
+      <h2 class="heading"><a id="Portfolio">My projects</a></h2>
       <div class="container">
         <div class="image-box">
           <img
@@ -110,63 +120,69 @@
         </div>
       </div>
     </div>
-    <h2 class="header-aboutme"><a id="contact">Contact</a></h2>
-    <h3 class="messageme">Message Me</h3>
-    <div class="contact-panelinfo">
-      <div class="upper-contact">
+    <h2 class="heading"><a id="contact">Contact</a></h2>
+    <div class="right-left">
+      <div>
         <input
           type="text"
-          class="input-name"
+          placeholder="Name"
+          class="contact-form-input"
           name="name"
           required
-          onclick="Name"
-          placeholder="Name"
         />
         <input
           type="email"
-          class="input-email"
-          name="email"
           placeholder="Email"
+          class="contact-form-input"
+          name="email"
           required
         />
-      </div>
-      <div class="footer-contact">
         <input
           type="text"
-          class="input-subject"
-          name="subject"
           placeholder="Subject"
+          class="contact-form-input"
+          name="Subject"
           required
         />
         <textarea
+          class="contact-textarea"
           name="message"
-          class="textarea"
-          placeholder="Message me"
-          cols="40"
-          rows="6"
+          placeholder="Message"
           required
         ></textarea>
-        <aside>
-          <div class="asidepanel">
-            <h3 class="contactinfo">Contact Info</h3>
-            <p class="paragrafcontactinfo">
-              Always available for freelance work. Feel free to contact me!
-            </p>
-            <p class="span-contact-info">
-              <span class="spanname">Name</span><br />
-              Miłosz<br />
-              <span class="spanname"
-                ><a id="mail" href="mailto:m.smaka@wp.pl"> Email Me</a></span
-              ><br />
-              m.smaka@wp.pl
-            </p>
-          </div>
-        </aside>
+        <button id="button" type="submit">Send Message</button>
+      </div>
+      <div class="contact-info">
+        <h2 class="contactinfo-side">Contact info</h2>
+        <p class="contact-info-freelance">
+          Always available for freelance work. Feel free to contact me!
+        </p>
+        <h3 class="name-contact-info">Name</h3>
+        <a class="name">Miłosz</a>
+        <h3>
+          <a class="name-contact-info" href="mailto:m.smaka@wp.pl">Email Me</a>
+        </h3>
+        <a class="email">m.smaka@wp.pl</a>
       </div>
     </div>
-    <button type="submit" class="button-send-message" name="send">
-      Send Message
-    </button>
-    <p class="copyright">CopyRight © 2023 Miłosz Smaka | All Rights Reserved</p>
+    <footer>
+      <div class="copyright">
+        CopyRight © 2023 Miłosz Smaka | All Rights Reserved
+        <div class="icons">
+          <a href="https://www.facebook.com/smakamilosz/">
+            <i id="facebook" class="fab fa-facebook iconss"></i
+          ></a>
+          <a href="https://www.instagram.com/smakyee/">
+            <i id="instagram" class="fab fa-instagram iconss"></i
+          ></a>
+          <a href="https://github.com/Smakiee">
+            <i id="github" class="fab fa-github iconss"></i
+          ></a>
+          <a href="https://www.linkedin.com/in/mi%C5%82osz-smaka-5218902aa/">
+            <i id="linkedin" class="fab fa-linkedin iconss"></i
+          ></a>
+        </div>
+      </div>
+    </footer>
   </body>
 </html>
