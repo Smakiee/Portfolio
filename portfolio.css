@@ -105,10 +105,10 @@ html {
   scroll-behavior: smooth;
 }
 .about-me {
-  font-size: 2rem;
-  padding-right: 20px;
-  padding-left: 20px;
-  width: 50%;
+  font-size: 1.5rem;
+  padding-right: 1rem;
+  padding-left: 1rem;
+  width: 100%;
 }
 .div-about-me {
   display: block;
@@ -243,7 +243,7 @@ html {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  padding-bottom: 200px;
+  padding-bottom: 10rem;
 }
 .image-box {
   margin: 10px;
@@ -320,10 +320,10 @@ html {
   display: flex;
   justify-content: space-between;
   font-size: 1em;
-  padding: 10px;
+  padding: 0.9rem;
 }
 .icons {
-  padding: 15px;
+  padding: 1.1rem;
 }
 .iconss {
   color: white;
@@ -376,10 +376,12 @@ html {
   border: 2px solid black;
   border-radius: 10%;
   margin-bottom: 7rem;
+  margin-left: 7.6rem;
+  justify-content: center;
 }
 #button:hover {
-  transform: scale(1.1);
-  transition: all 0.5s;
+  transform: scale(0.9);
+  transition: all 0.3s;
 }
 .right-left {
   display: flex;
@@ -412,4 +414,52 @@ html {
 .name {
   font-size: 1.2rem;
   padding-bottom: 1rem;
+}
+.header-blog {
+  color: #000000;
+  margin-top: 4.2rem;
+  padding: 1.5rem;
+  font-size: 3.5rem;
+  text-align: center;
+  background-color: rgb(128, 125, 125);
+}
+.leftcolumn {
+  float: left;
+  width: 75%;
+}
+.rightcolumn {
+  float: left;
+  width: 25%;
+  padding-left: 20px;
+}
+.fakeimg {
+  background-color: #ffffff;
+  width: 100%;
+  padding: 20px;
+}
+.card {
+  background-color: rgb(128, 125, 125);
+  padding: 20px;
+  margin-top: 20px;
+  color: #000000;
+}
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+.footer-blog {
+  padding: 2rem;
+  text-align: center;
+  background-color: rgb(128, 125, 125);
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+  color: #000000;
+}
+@media screen and (max-width: 800px) {
+  .leftcolumn,
+  .rightcolumn {
+    width: 100%;
+    padding: 0;
+  }
 }
